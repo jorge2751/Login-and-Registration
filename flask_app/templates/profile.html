@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Welcome to Your Profile Page!</h1>
+				<p>Here is where you can view and manage your account information:</p>
+				<ul>
+					<li>First Name: {{ user.first_name }}</li>
+					<li>Last Name: {{ user.last_name }}</li>
+					<li>Email: {{ user.email }}</li>
+				</ul>
+				<form action="/logout" method="get">
+					<button type="submit" class="btn btn-primary">Logout</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
